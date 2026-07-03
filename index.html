@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshva R | Portfolio</title>
+    <meta name="description" content="Portfolio of Joshva R, Computer Science student, Software Developer, and Data Analyst.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Scroll Progress Indicator -->
+    <div id="scroll-progress"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Joshva<span class="dot">.</span></a>
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills-section" class="nav-link">Skills</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-bg-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+            </div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-subtitle">Welcome to my space</span>
+                    <h1 class="hero-title">Hi, I'm <span class="highlight">Joshva R</span></h1>
+                    <h2 class="hero-typed-text">I am a <span id="typed-target">Software Developer</span><span class="typed-cursor">|</span></h2>
+                    <p class="hero-description">
+                        Motivated and detail-oriented Computer Science student with a strong interest in software development and data analytics.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://github.com/joshvarobinston" target="_blank" aria-label="GitHub" class="social-icon"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/joshva-r-ba725a2a5" target="_blank" aria-label="LinkedIn" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="avatar-wrapper">
+                        <div class="avatar-backdrop"></div>
+                        <div class="avatar-image">
+                            <i class="fa-solid fa-laptop-code code-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-down">
+                <a href="#about" aria-label="Scroll Down">
+                    <i class="fa-solid fa-arrow-down"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="subtitle">My Story</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="about-grid">
+                    <div class="about-info">
+                        <h3>Passionate about solving problems and building innovative solutions</h3>
+                        <p>
+                            I am a Computer Science student who is passionate about solving problems, learning new technologies, and developing innovative solutions to real-world challenges.
+                        </p>
+                        <p>
+                            Possessing strong analytical thinking, adaptability, and collaboration skills, I am committed to continuous learning and professional growth in both software engineering and data analytics.
+                        </p>
+                        <div class="info-meta">
+                            <div class="meta-item"><strong>Location:</strong> India</div>
+                            <div class="meta-item"><strong>Email:</strong> joshestu08@gmail.com</div>
+                            <div class="meta-item"><strong>Employment:</strong> Open to Roles / Internships</div>
+                        </div>
+                        <a href="#" class="btn btn-primary download-cv"><i class="fa-solid fa-download"></i> Download CV</a>
+                    </div>
+                    <div class="about-skills" id="skills-section">
+                        <h3>My Technical Stack</h3>
+                        <div class="skills-container">
+                            <div class="skill-category">
+                                <h4>Programming & Web Development</h4>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span>Python (Django) / Java / JavaScript</span>
+                                        <span>90%</span>
+                                    </div>
+                                    <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span>React.js / Material UI / HTML5 / CSS3</span>
+                                        <span>85%</span>
+                                    </div>
+                                    <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Data Analytics & Databases</h4>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span>Data Analysis (Pandas, NumPy, Matplotlib, SQL)</span>
+                                        <span>85%</span>
+                                    </div>
+                                    <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span>PostgreSQL Database</span>
+                                        <span>80%</span>
+                                    </div>
+                                    <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="experience-section section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="subtitle">My Academics</span>
+                    <h2 class="section-title">Education</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="timeline-container">
+                    <div class="timeline-line"></div>
+                    
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item left">
+                        <div class="timeline-dot"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2022 - 2026</span>
+                            <h3>B.E. Computer Science and Engineering</h3>
+                            <h4 class="timeline-company">St. Mother Theresa Engineering College</h4>
+                            <p>Tuticorin District – 628102</p>
+                            <p style="margin-top: 8px; font-weight: 600; color: var(--accent);">CGPA: 8.2 / 10</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section alternate-bg">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="subtitle">My Creations</span>
+                    <h2 class="section-title">Projects</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <!-- Projects Filter -->
+                <div class="projects-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="machine-learning">Machine Learning & NLP</button>
+                    <button class="filter-btn" data-filter="frontend">Frontend & React</button>
+                    <button class="filter-btn" data-filter="data-analytics">Data Analytics</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+                    <!-- Project Card 1 -->
+                    <div class="project-card" data-category="machine-learning">
+                        <div class="project-img-wrapper">
+                            <div class="project-overlay">
+                                <button class="btn btn-primary view-project-details" data-project="1">View Details</button>
+                            </div>
+                            <div class="project-placeholder-img">
+                                <i class="fa-solid fa-brain project-placeholder-icon"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">Machine Learning / NLP</span>
+                            <h3 class="project-title">IMDB Movie Review Sentiment Analysis</h3>
+                            <p class="project-desc">A deep learning LSTM model to classify IMDB movie reviews as positive or negative, complete with a Streamlit web app.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div class="project-card" data-category="frontend">
+                        <div class="project-img-wrapper">
+                            <div class="project-overlay">
+                                <button class="btn btn-primary view-project-details" data-project="2">View Details</button>
+                            </div>
+                            <div class="project-placeholder-img">
+                                <i class="fa-brands fa-react project-placeholder-icon"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">Frontend & React</span>
+                            <h3 class="project-title">Interactive Resume Dashboard</h3>
+                            <p class="project-desc">A responsive dashboard built with React.js and Material UI (MUI) featuring customized data display and dark mode support.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3 -->
+                    <div class="project-card" data-category="data-analytics">
+                        <div class="project-img-wrapper">
+                            <div class="project-overlay">
+                                <button class="btn btn-primary view-project-details" data-project="3">View Details</button>
+                            </div>
+                            <div class="project-placeholder-img">
+                                <i class="fa-solid fa-chart-simple project-placeholder-icon"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">Data Analytics</span>
+                            <h3 class="project-title">EDA on Sales Datasets</h3>
+                            <p class="project-desc">Exploratory Data Analysis using Python (Pandas, NumPy, Matplotlib) and SQL to extract actionable retail insights.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="subtitle">Get In Touch</span>
+                    <h2 class="section-title">Contact</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <h3>Let's start a conversation</h3>
+                        <p>Feel free to reach out for internship opportunities, project collaborations, or just to connect!</p>
+                        <div class="contact-methods">
+                            <div class="contact-method-item">
+                                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="contact-method-detail">
+                                    <span>Email Me</span>
+                                    <strong>joshestu08@gmail.com</strong>
+                                </div>
+                            </div>
+                            <div class="contact-method-item">
+                                <div class="contact-icon"><i class="fa-brands fa-linkedin"></i></div>
+                                <div class="contact-method-detail">
+                                    <span>LinkedIn</span>
+                                    <strong><a href="https://www.linkedin.com/in/joshva-r-ba725a2a5" target="_blank">joshva-r-ba725a2a5</a></strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-wrapper">
+                        <form id="contact-form" class="contact-form" novalidate>
+                            <div class="form-group">
+                                <input type="text" id="form-name" required placeholder=" ">
+                                <label for="form-name">Full Name</label>
+                                <span class="form-error">Please enter your name</span>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="form-email" required placeholder=" ">
+                                <label for="form-email">Email Address</label>
+                                <span class="form-error">Please enter a valid email address</span>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="form-message" required rows="5" placeholder=" "></textarea>
+                                <label for="form-message">Your Message</label>
+                                <span class="form-error">Please type a message</span>
+                            </div>
+                            <button type="submit" class="btn btn-primary submit-btn">
+                                <span>Send Message</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                            <div id="form-status-msg" class="form-status-msg"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 Joshva R. All rights reserved.</p>
+            <div class="footer-socials">
+                <a href="https://github.com/joshvarobinston" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/joshva-r-ba725a2a5" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Project Details Modal -->
+    <div id="project-modal" class="modal" aria-hidden="true" role="dialog">
+        <div class="modal-backdrop"></div>
+        <div class="modal-container">
+            <button class="modal-close" aria-label="Close modal"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-body" id="modal-content-target">
+                <!-- Injected dynamically by script.js -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
